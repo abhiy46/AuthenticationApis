@@ -1,0 +1,40 @@
+Prerequisite:
+
+Python 3.7 or above
+Flask 
+Flaskrestfulframework
+
+Run python Authentication.py
+Once starts, hit the below url with header and appropriate data to call apis.
+
+Login:
+
+127.0.0.1:5000/Login
+-H  Content-Type:application/json
+
+ 
+
+-D  application/json
+{"email":"test2@test.com",
+
+"password":"password"}
+
+ 
+Create user account: 
+127.0.0.1:5000/create
+-H  Content-Type:application/json
+
+ -D {"email":"test@test.com",
+
+"name":"test",
+
+"password":"password"}
+
+
+127.0.0.1:5000/Reset
+-H  Content-Type:application/json
+-D {"email":"test@test.com",
+
+"NewPassword":"NewPassword"}
+
+
